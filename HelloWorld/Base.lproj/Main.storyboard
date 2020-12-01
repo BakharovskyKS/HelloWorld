@@ -24,25 +24,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJZ-sN-OwZ">
-                                <rect key="frame" x="132" y="725" width="150" height="48"/>
+                                <rect key="frame" x="82" y="716" width="250" height="48"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="dJk-mM-Xm2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="nKc-97-Ntd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Show text"/>
+                                <connections>
+                                    <action selector="makeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSB-L1-Kmu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zur-FI-WDn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Rh-0Q-zNv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xJZ-sN-OwZ" secondAttribute="bottom" constant="89" id="WKi-f1-pkc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xJZ-sN-OwZ" secondAttribute="bottom" constant="98" id="7Aa-ex-1FR"/>
                             <constraint firstItem="zur-FI-WDn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="ZS6-yo-pHq"/>
                             <constraint firstItem="xJZ-sN-OwZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3N-VD-g2S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="zur-FI-WDn" id="ZBU-av-gtg"/>
+                        <outlet property="toggleButton" destination="xJZ-sN-OwZ" id="uDL-Hu-CSw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
